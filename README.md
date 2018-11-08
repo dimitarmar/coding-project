@@ -1,3 +1,6 @@
+THE SOLUTION OF THE CODING CHALLENGE
+
+
 # Link Coding Challenge
 
 In this challenge we want you to create an app which allows you to search for a city and get back a visualization (time series graph) of the city's temperature forecast for the next 16 days.
