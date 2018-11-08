@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 
-import data from '../data/city.list.json';
+import data from '../data/city.list1.json';
 
 @Injectable({
   providedIn: 'root'
