@@ -11,15 +11,19 @@ import {WeatherService} from '../services/weather.service';
 export class FormComponent implements OnInit {
 
 
-  data: Array<any>;
+  data: any;
   selectedCity = '';
 
   constructor(private getCitiesListService: GetCitiesListService ,
               private weatherService: WeatherService) { }
 
   ngOnInit() {
-      this.data = this.getCitiesListService.getCities();
-      console.log ('%o', this.data);
+
+      this.getCitiesListService.getCities()
+          .subscribe((data: any): void => {
+              this.data = data;
+          });
+        // console.log ('%o', this.data);
   }
 
   checkIfCityExist() {

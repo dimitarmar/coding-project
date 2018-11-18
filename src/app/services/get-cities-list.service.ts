@@ -1,20 +1,15 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 
-import data from '../data/city.list1.json';
-
 @Injectable({
   providedIn: 'root'
 })
 export class GetCitiesListService {
 
-  constructor() { }
+    constructor(private httpClient: HttpClient) { }
 
   getCities() {
-
-    return data;
+      return this.httpClient.get('../../app/data/city.list.json');
   }
-
-
 
 }
