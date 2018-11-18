@@ -9,7 +9,7 @@ export class GetCitiesListService {
     constructor(private httpClient: HttpClient) { }
 
   getCities() {
-      return this.httpClient.get('../../app/data/city.list.json');
+      return this.httpClient.get('../../assets/city.list.json');
   }
 
 }
